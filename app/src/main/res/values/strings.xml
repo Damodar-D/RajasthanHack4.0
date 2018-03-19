@@ -1,0 +1,38 @@
+<resources xmlns:https="http://schemas.android.com/tools">
+    <string name="app_name">HackaRaj</string>
+    <string name="login">Login</string>
+    <string name="newhere">New Here?</string>
+    <string name="loginid">SSOID/Username</string>
+    <string name="pass">Password</string>
+    <string name="eng">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="signup"><u>Sign Up</u></string>
+    <string name="title_activity_content_page">ContentPage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="chatbot">ChatBot</string>
+    <string name="market">e-Market</string>
+    <string name="epay">e-Pay</string>
+    <string name="setting">Settings</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_array">
+        <item>Ajmer</item>
+        <item>Bikaner</item>
+        <item>Chittorgarh</item>
+        <item>Jaipur</item>
+        <item>Kota</item>
+        <item>Udaipur</item>
+    </string-array>
+
+    <string-array name="spinner_array1">
+        <item>vegetables</item>
+        <item>fruits</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
