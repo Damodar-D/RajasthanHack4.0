@@ -31,5 +31,9 @@
         <item>सब्जियां</item>
         <item>फल</item>
     </string-array>
+    <string name="close_activity">ऐप से बाहर निकल रहा है</string>
+    <string name="confirm_close">क्या आप वाकई इस ऐप को बंद करना चाहते हैं?</string>
+    <string name="ask_yes">हाँ</string>
+    <string name="ask_no">नहीं</string>
 
 </resources>

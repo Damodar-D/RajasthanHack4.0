@@ -66,7 +66,7 @@ public class chatbotActivity extends AppCompatActivity implements AIListener {
 
         ref = FirebaseDatabase.getInstance().getReference();
         ref.keepSynced(true);
-        final AIConfiguration config = new AIConfiguration("a30a8551756245118df7fd3bf80d0c6a",
+        final AIConfiguration config = new AIConfiguration("a9f28f9d17fc48f2aa6c689d14bfc264",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
 

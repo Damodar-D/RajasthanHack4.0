@@ -38,5 +38,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:11.2.2'
     implementation 'com.firebaseui:firebase-ui-database:2.3.0'
     implementation 'org.jsoup:jsoup:1.10.3'
+
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+
 }
 apply plugin: 'com.google.gms.google-services'

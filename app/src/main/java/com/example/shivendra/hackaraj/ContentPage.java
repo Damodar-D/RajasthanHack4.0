@@ -1,11 +1,13 @@
 package com.example.shivendra.hackaraj;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -49,7 +51,21 @@ public class ContentPage extends AppCompatActivity
 //            Intent i = new Intent(getApplicationContext(),ContentPage.class);
 //            startActivity(i);
 //            finish();
-            super.onBackPressed();
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(getString(R.string.close_activity))
+                    .setMessage(getString(R.string.confirm_close))
+                    .setPositiveButton(getString(R.string.ask_yes), new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+
+                    })
+                    .setNegativeButton(getString(R.string.ask_no), null)
+                    .show();
+           // super.onBackPressed();
         }
     }
 

@@ -17,6 +17,11 @@
     <string name="epay">e-Pay</string>
     <string name="setting">Settings</string>
 
+    <string name="close_activity">Exiting App</string>
+    <string name="confirm_close">Are you sure you want to close this app?</string>
+    <string name="ask_yes">Yes</string>
+    <string name="ask_no">No</string>
+
 
     <string name="action_settings">Settings</string>
 
