@@ -4,8 +4,8 @@
     <string name="newhere">New Here?</string>
     <string name="loginid">SSOID/Username</string>
     <string name="pass">Password</string>
-    <string name="eng">English</string>
-    <string name="hindi">हिंदी</string>
+    <string name="eng" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिंदी</string>
     <string name="signup"><u>Sign Up</u></string>
     <string name="title_activity_content_page">ContentPage</string>
 
@@ -33,6 +33,5 @@
         <item>vegetables</item>
         <item>fruits</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

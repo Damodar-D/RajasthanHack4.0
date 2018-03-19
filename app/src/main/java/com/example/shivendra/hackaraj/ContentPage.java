@@ -85,12 +85,12 @@ public class ContentPage extends AppCompatActivity
             intent = new Intent(getApplicationContext(),chatbotActivity.class);
             startActivity(intent);
         } else if (id == R.id.e_pay) {
-            setTitle("e-Pay");
+            setTitle( getString(R.string.epay));
             SecondFragment secondFragment = new SecondFragment();
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,secondFragment).commit();
         } else if (id == R.id.market) {
-            setTitle("e-Market");
+            setTitle( getString(R.string.market));
             ThirdFragment thirdFragment = new ThirdFragment();
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,thirdFragment).commit();
@@ -100,7 +100,7 @@ public class ContentPage extends AppCompatActivity
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,fourthFragment).commit();
         } else if (id == R.id.setting) {
-            setTitle("Settings");
+            setTitle( getString(R.string.setting));
             FifthFragment fifthFragment = new FifthFragment();
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,fifthFragment).commit();

@@ -1,6 +1,7 @@
 package com.example.shivendra.hackaraj;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -11,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -42,10 +44,16 @@ public class chatbotActivity extends AppCompatActivity implements AIListener {
     Boolean flagFab = true;
     private AIService aiService;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
 
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView1);
         editText = findViewById(R.id.editText1);
@@ -223,6 +231,13 @@ public class chatbotActivity extends AppCompatActivity implements AIListener {
         String reply = res.getFulfillment().getSpeech();
         ChatMessage chatMessage = new ChatMessage(reply, "bot");
         ref.child("chat").push().setValue(chatMessage);
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        Intent myIntent = new Intent(getApplicationContext(), ContentPage.class);
+        startActivityForResult(myIntent, 0);
+        return true;
 
     }
 

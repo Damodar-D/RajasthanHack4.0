@@ -1,10 +1,15 @@
 package com.example.shivendra.hackaraj.Login;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -17,9 +22,8 @@ import android.widget.TextView;
 import com.example.shivendra.hackaraj.ContentPage;
 import com.example.shivendra.hackaraj.R;
 
-/**
- * Created by Shivendra on 15/03/18.
- */
+import java.util.Locale;
+
 
 public class Login extends AppCompatActivity {
 
@@ -27,6 +31,8 @@ public class Login extends AppCompatActivity {
     private EditText id;
     private EditText pass;
     private TextView signup;
+
+    Locale myLocale;
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
@@ -39,10 +45,14 @@ public class Login extends AppCompatActivity {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         this.getSupportActionBar().hide();
-
         setContentView(R.layout.login_page);
+
+        ConstraintLayout constraintLayout = (ConstraintLayout) findViewById(R.id.login_layout);
+        final AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
 
         login = findViewById(R.id.login_button);
         id = findViewById(R.id.loginID);
@@ -52,11 +62,11 @@ public class Login extends AppCompatActivity {
         radioGroup = findViewById(R.id.radio_group);
         yesRadio = findViewById(R.id.radio_eng);
 
-        yesRadio.setChecked(true);
+        //yesRadio.setChecked(true);
 
         signup.setClickable(true);
         signup.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "<a href='https://sso.rajasthan.gov.in/register'> Sign Up </a>";
+        String text = "<a href='https://sso.rajasthan.gov.in/register'>"+ getString(R.string.signup)+"</a>";
         signup.setText(Html.fromHtml(text));
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -74,11 +84,11 @@ public class Login extends AppCompatActivity {
                 radioButton = findViewById(checkedId);
                 switch (radioButton.getId()){
                     case R.id.radio_eng:{
-                        //TODO: Setup language support
+                        setLocale("en");
                         break;
                     }
                     case R.id.radio_hindi:{
-                        //TODO: Setup language support
+                        setLocale("hi");
                         break;
                     }
                 }
@@ -86,4 +96,16 @@ public class Login extends AppCompatActivity {
         });
 
     }
+
+    public void setLocale(String lang) {
+        myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, Login.class);
+        startActivity(refresh);
+    }
+
 }

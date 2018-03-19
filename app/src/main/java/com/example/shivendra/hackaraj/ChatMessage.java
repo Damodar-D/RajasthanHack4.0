@@ -1,9 +1,5 @@
 package com.example.shivendra.hackaraj;
 
-/**
- * Created by Subham on 17-03-2018.
- */
-
 public class ChatMessage {
     private String msgText;
     private String msgUser;

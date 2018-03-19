@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HackaRaj</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="newhere">क्या आप यहाँ नए हैं?</string>
+    <string name="loginid">SSOID / प्रयोक्ता नाम</string>
+    <string name="pass">पारण शब्द</string>
+    <string name="signup">साइन अप करें</string>
+    <string name="title_activity_content_page">सामग्री पृष्ठ</string>
+
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
+
+    <string name="chatbot">चैट बॉट</string>
+    <string name="market">"ई-बाजार "</string>
+    <string name="setting">सेटिंग्स</string>
+    <string name="epay">ई-मूल्य</string>
+
+    <string name="action_settings">सेटिंग्स</string>
+
+    <string-array name="spinner_array">
+        <item>अजमेर</item>
+        <item>बीकानेर</item>
+        <item>चित्तौड़गढ़</item>
+        <item>जयपुर</item>
+        <item>कोटा</item>
+        <item>उदयपुर</item>
+    </string-array>
+
+    <string-array name="spinner_array1">
+        <item>सब्जियां</item>
+        <item>फल</item>
+    </string-array>
+
+</resources>
