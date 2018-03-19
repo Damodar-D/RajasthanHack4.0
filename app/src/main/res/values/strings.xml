@@ -30,8 +30,8 @@
     </string-array>
 
     <string-array name="spinner_array1">
-        <item>vegetables</item>
-        <item>fruits</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
     </string-array>
 
 </resources>

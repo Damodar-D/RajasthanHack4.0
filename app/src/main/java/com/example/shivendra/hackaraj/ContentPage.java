@@ -83,6 +83,7 @@ public class ContentPage extends AppCompatActivity
         if (id == R.id.chatbot) {
             setTitle("ChatBot");
             intent = new Intent(getApplicationContext(),chatbotActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         } else if (id == R.id.e_pay) {
             setTitle( getString(R.string.epay));
