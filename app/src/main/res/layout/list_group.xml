@@ -4,7 +4,8 @@
     android:padding="18dp"
     android:background="@color/colorPrimary"
     android:layout_height="wrap_content"
-    android:paddingTop="12dp">
+    android:paddingTop="12dp"
+    android:paddingBottom="6dp">
 
     <ImageView
         android:layout_width="27dp"

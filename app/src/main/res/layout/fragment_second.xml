@@ -4,13 +4,15 @@
     android:layout_height="match_parent"
     tools:context="com.example.shivendra.hackaraj.Fragments.SecondFragment"
     android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
     android:layout_gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
     <Spinner
         android:id="@+id/eai_sp"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
@@ -21,9 +23,11 @@
     <EditText
         android:id="@+id/temp"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:hint="@string/temperature"
+        android:textStyle="italic"
         android:layout_marginStart="4dp"
         android:layout_marginTop="2dp"
         android:entries="@array/spinner_array1"
@@ -32,9 +36,11 @@
     <EditText
         android:id="@+id/m1"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:textStyle="italic"
+        android:hint="@string/last_month_units"
         android:layout_marginStart="4dp"
         android:layout_marginTop="2dp"
         android:entries="@array/spinner_array1"
@@ -43,10 +49,12 @@
     <EditText
         android:id="@+id/m2"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:textStyle="italic"
         android:layout_marginStart="4dp"
+        android:hint="@string/last_2_months_units"
         android:layout_marginTop="2dp"
         android:entries="@array/spinner_array1"
         android:layout_gravity="center" />
@@ -54,9 +62,11 @@
     <EditText
         android:id="@+id/m3"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:hint="@string/last_3_months_units"
+        android:textStyle="italic"
         android:layout_marginStart="4dp"
         android:layout_marginTop="2dp"
         android:entries="@array/spinner_array1"
@@ -67,22 +77,25 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/right_background"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_marginTop="2dp"
         android:entries="@array/spinner_array1"
         android:layout_gravity="center"
-        android:text="Show"/>
+        android:text="@string/show"/>
 
     <TextView
         android:id="@+id/eai_tv"
-        android:textSize="35sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAlignment="center"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="2dp"
-        android:layout_gravity="center" />
+        android:textAlignment="center"
+        android:textSize="23sp" />
 </LinearLayout>

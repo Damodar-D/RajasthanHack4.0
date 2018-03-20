@@ -3,12 +3,14 @@
     android:id="@+id/expand_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shivendra.hackaraj.Fragments.FourthFragment">
+    tools:context="com.example.shivendra.hackaraj.Fragments.FourthFragment"
+    android:padding="6dp">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ExpandableListView
         android:id="@+id/lvExp"
+        android:paddingTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:groupIndicator="@drawable/arrow_head"

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RajasthanHack4.iml" filepath="$PROJECT_DIR$/RajasthanHack4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RajasthanHack4.0.iml" filepath="$PROJECT_DIR$/RajasthanHack4.0.iml" />
       <module fileurl="file://C:\Users\prate\Documents\Android\RajasthanHack4\RajasthanHack4.0.iml" filepath="C:\Users\prate\Documents\Android\RajasthanHack4\RajasthanHack4.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

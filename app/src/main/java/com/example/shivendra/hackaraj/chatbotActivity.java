@@ -1,11 +1,14 @@
 package com.example.shivendra.hackaraj;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -77,6 +80,7 @@ public class chatbotActivity extends AppCompatActivity implements AIListener {
         final AIRequest aiRequest = new AIRequest();
 
         addBtn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("StaticFieldLeak")
             @Override
             public void onClick(View view) {
 
@@ -260,6 +264,25 @@ public class chatbotActivity extends AppCompatActivity implements AIListener {
     @Override
     public void onListeningCanceled() {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle(getString(R.string.close_activity))
+                .setMessage(getString(R.string.confirm_close))
+                .setPositiveButton(getString(R.string.ask_yes), new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton(getString(R.string.ask_no), null)
+                .show();
     }
 
     @Override

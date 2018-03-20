@@ -33,6 +33,7 @@
         android:id="@+id/citySelect"
         android:layout_width="150dp"
         android:layout_height="55dp"
+        android:background="@drawable/right_background"
         android:layout_gravity="center"
         android:text="@string/select" />
 

@@ -2,6 +2,7 @@ package com.example.shivendra.hackaraj;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,10 +18,17 @@ import com.example.shivendra.hackaraj.Fragments.FifthFragment;
 import com.example.shivendra.hackaraj.Fragments.FourthFragment;
 import com.example.shivendra.hackaraj.Fragments.SecondFragment;
 import com.example.shivendra.hackaraj.Fragments.ThirdFragment;
+import com.example.shivendra.hackaraj.Login.Login;
+
+import java.util.Locale;
 
 public class ContentPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    String url = "https://bot.dialogflow.com/a875122e-e0ca-4d7f-8539-d2cd43dd2f18";
+    String mylocale;
+    Locale locale;
+    Login login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,12 +107,20 @@ public class ContentPage extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Intent intent;
+        Intent intent1 = getIntent();
+        mylocale = intent1.getStringExtra("locale");
+
 
         if (id == R.id.chatbot) {
-            setTitle("ChatBot");
-            intent = new Intent(getApplicationContext(),chatbotActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
+                intent = new Intent(getApplicationContext(),chatbotActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+//
+            //Hindi
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(url));
+//                startActivity(i);
+
         } else if (id == R.id.e_pay) {
             setTitle( getString(R.string.eAI));
             SecondFragment secondFragment = new SecondFragment();

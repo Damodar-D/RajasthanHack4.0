@@ -33,7 +33,7 @@ public class FourthFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        groups = new String[]{"ChatBot", "Energy-AI", "e-Market"};
+        groups = new String[]{getString(R.string.chatbot), getString(R.string.eAI), getString(R.string.market)};
 
         children = new String[][]{
                 {getString(R.string.exp1)},

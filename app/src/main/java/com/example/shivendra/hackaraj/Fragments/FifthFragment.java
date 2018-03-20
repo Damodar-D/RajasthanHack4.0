@@ -4,6 +4,7 @@ package com.example.shivendra.hackaraj.Fragments;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -26,7 +27,7 @@ public class FifthFragment extends Fragment {
 
      private ToggleButton change;
      Locale myLocale;
-
+     String url = "https://bot.dialogflow.com/a875122e-e0ca-4d7f-8539-d2cd43dd2f18";
 
 
     public FifthFragment() {
@@ -45,6 +46,12 @@ public class FifthFragment extends Fragment {
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//
+//
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(url));
+//                startActivity(i);
+            //}
 
             if(change.getTextOff() == "English"){
                 setLocale("en");

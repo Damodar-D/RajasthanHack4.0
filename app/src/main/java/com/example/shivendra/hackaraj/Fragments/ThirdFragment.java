@@ -73,8 +73,8 @@ public class ThirdFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
             mProgressDialog = new ProgressDialog(getActivity());
-            mProgressDialog.setTitle("Fetching Data");
-            mProgressDialog.setMessage("Hold your horses...");
+            mProgressDialog.setTitle(getString(R.string.Fetching_data));
+            mProgressDialog.setMessage(getString(R.string.dia_wait));
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.show();
         }

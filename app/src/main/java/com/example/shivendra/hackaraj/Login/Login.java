@@ -36,6 +36,7 @@ public class Login extends AppCompatActivity {
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
+    String langu;
     private RadioButton yesRadio;
 
 
@@ -73,6 +74,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),ContentPage.class);
+                i.putExtra("locale",langu);
                 startActivity(i);
                 finish();
             }
@@ -97,7 +99,8 @@ public class Login extends AppCompatActivity {
 
     }
 
-    public void setLocale(String lang) {
+    public String setLocale(String lang) {
+        langu = lang;
         myLocale = new Locale(lang);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
@@ -107,6 +110,7 @@ public class Login extends AppCompatActivity {
         Intent refresh = new Intent(this, Login.class);
         refresh.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(refresh);
+        return lang;
     }
 
 }

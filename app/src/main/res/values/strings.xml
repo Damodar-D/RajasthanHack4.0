@@ -51,4 +51,14 @@
         <item>Fruits</item>
     </string-array>
 
+    <string name="Fetching_data">Fetching Data</string>
+    <string name="dia_wait">Please Wait</string>
+    <string name="temperature">Temperature</string>
+    <string name="last_month_units">Last Month Units</string>
+    <string name="last_2_months_units">Last 2 Months Units</string>
+    <string name="last_3_months_units">Last 3 Months Units</string>
+    <string name="show">Show</string>
+    <string name="energy_val">\Next Month\'s Consumption</string>
+
+
 </resources>
