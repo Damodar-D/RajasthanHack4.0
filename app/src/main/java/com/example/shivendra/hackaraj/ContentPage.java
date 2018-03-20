@@ -25,7 +25,7 @@ import java.util.Locale;
 public class ContentPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    String url = "https://bot.dialogflow.com/a875122e-e0ca-4d7f-8539-d2cd43dd2f18";
+    String url = "https://bot.dialogflow.com/1575c0cc-33fa-4fb1-8027-2d062ce7ed57";
     String mylocale;
     Locale locale;
     Login login;
@@ -112,14 +112,14 @@ public class ContentPage extends AppCompatActivity
 
 
         if (id == R.id.chatbot) {
-                intent = new Intent(getApplicationContext(),chatbotActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-//
+//                intent = new Intent(getApplicationContext(),chatbotActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                startActivity(intent);
+////
             //Hindi
-//                Intent i = new Intent(Intent.ACTION_VIEW);
-//                i.setData(Uri.parse(url));
-//                startActivity(i);
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
 
         } else if (id == R.id.e_pay) {
             setTitle( getString(R.string.eAI));
