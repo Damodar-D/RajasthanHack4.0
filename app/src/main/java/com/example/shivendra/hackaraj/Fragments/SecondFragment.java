@@ -37,6 +37,7 @@ public class SecondFragment extends Fragment {
     Vibrator vibrator;
     DatabaseReference connectedRef = FirebaseDatabase.getInstance().getReference(".info/connected");
     DatabaseReference root = FirebaseDatabase.getInstance().getReference();
+    String dispData;
 
     public SecondFragment() {
         // Required empty public constructor
@@ -75,6 +76,10 @@ public class SecondFragment extends Fragment {
                     data = new Data(1,dat1_, dat2_, dat3_, dat4_);
                     root.child("eAI").setValue(data);
 
+                    if(dispData != null){
+                        disp.setText("Next Month's Consumption\n" + dispData);
+                    }
+
                 }else {
 
                 }
@@ -85,7 +90,7 @@ public class SecondFragment extends Fragment {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.getValue().toString() != null){
-                    disp.setText("Next Month's Consumption\n" + dataSnapshot.getValue().toString());
+                    dispData = dataSnapshot.getValue().toString();
                 }
             }
 
