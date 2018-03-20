@@ -41,6 +41,11 @@
         <item>Udaipur</item>
     </string-array>
 
+    <string-array name="eai_options">
+        <item>Manual Entry</item>
+        <item>Fetch from E-Mitra</item>
+    </string-array>
+
     <string-array name="spinner_array1">
         <item>Vegetables</item>
         <item>Fruits</item>
