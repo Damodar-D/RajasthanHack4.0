@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HackaRaj</string>
+    <string name="app_name">राजमंत्री</string>
+    <string name="tagline">आपका अपना सलाहकार</string>
     <string name="login">लॉग इन करें</string>
     <string name="newhere">क्या आप यहाँ नए हैं?</string>
     <string name="loginid">SSOID / प्रयोक्ता नाम</string>
@@ -14,7 +15,7 @@
     <string name="chatbot">चैट बॉट</string>
     <string name="market">"ई-बाजार "</string>
     <string name="setting">सेटिंग्स</string>
-    <string name="epay">ई-मूल्य</string>
+    <string name="eAI">ऊर्जा-AI</string>
 
     <string name="action_settings">सेटिंग्स</string>
 

@@ -1,5 +1,6 @@
 <resources xmlns:https="http://schemas.android.com/tools">
-    <string name="app_name">HackaRaj</string>
+    <string name="app_name">RajMantri</string>
+    <string name="tagline">Your own adviser</string>
     <string name="login">Login</string>
     <string name="newhere">New Here?</string>
     <string name="loginid">SSOID/Username</string>
@@ -14,8 +15,8 @@
 
     <string name="chatbot">ChatBot</string>
     <string name="market">e-Market</string>
-    <string name="epay">e-Pay</string>
     <string name="setting">Settings</string>
+    <string name="eAI">energy-AI</string>
 
     <string name="close_activity">Exiting App</string>
     <string name="confirm_close">Are you sure you want to close this app?</string>

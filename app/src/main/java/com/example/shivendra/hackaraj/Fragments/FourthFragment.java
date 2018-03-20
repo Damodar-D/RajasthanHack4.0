@@ -1,6 +1,5 @@
 package com.example.shivendra.hackaraj.Fragments;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,7 +12,6 @@ import com.example.shivendra.hackaraj.R;
  * A simple {@link Fragment} subclass.
  */
 public class FourthFragment extends Fragment {
-
 
     public FourthFragment() {
         // Required empty public constructor

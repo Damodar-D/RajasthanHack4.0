@@ -10,13 +10,12 @@
             android:title="@string/chatbot" />
         <item
             android:id="@+id/e_pay"
-            android:icon="@drawable/ic_credit_card_black_24px"
-            android:title="@string/epay" />
+            android:icon="@drawable/ic_trending_up_black_24px"
+            android:title="@string/eAI" />
         <item
             android:id="@+id/market"
-            android:icon="@drawable/ic_local_mall_black_24px"
+            android:icon="@drawable/ic_credit_card_black_24px"
             android:title="@string/market" />
-
 
 
     <item android:title="Communicate">

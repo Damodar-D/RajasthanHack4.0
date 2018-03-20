@@ -102,7 +102,7 @@ public class ContentPage extends AppCompatActivity
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         } else if (id == R.id.e_pay) {
-            setTitle( getString(R.string.epay));
+            setTitle( getString(R.string.eAI));
             SecondFragment secondFragment = new SecondFragment();
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,secondFragment).commit();
