@@ -15,7 +15,7 @@
     <string name="chatbot">चैट बॉट</string>
     <string name="market">"ई-बाजार "</string>
     <string name="setting">सेटिंग्स</string>
-    <string name="eAI">ऊर्जा-AI</string>
+    <string name="eAI">ऊर्जा-एI</string>
 
     <string name="action_settings">सेटिंग्स</string>
 
@@ -36,5 +36,10 @@
     <string name="confirm_close">क्या आप वाकई इस ऐप को बंद करना चाहते हैं?</string>
     <string name="ask_yes">हाँ</string>
     <string name="ask_no">नहीं</string>
+    <string name="more">अतिरिक्त</string>
+    <string name="exp1">" हमारी चैटबॉट विशेष रूप से एक शिकायत दर्ज कराने के दौरान आपकी समस्याओं को हल करने के लिए प्रशिक्षित किया जाता है।"</string>
+    <string name="exp2">" ऊर्जा मॉड्यूल ऊर्जा की खपत के सबसे सटीक भविष्यवाणी के लिए मशीन सीखने का उपयोग करता है जिसे विभिन्न उपयोगों के लिए बढ़ाया जा सकता है।"</string>
+    <string name="exp3">" ई-मार्केट फलों और सब्जियों की वास्तविक समय कीमतों को प्रदान करता है और यहां तक ​​कि कीमतों का भविष्यवाणी भी मुहैया करा सकता है।"</string>
+    <string name="select">" चुन लेना"</string>
 
 </resources>

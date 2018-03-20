@@ -16,15 +16,21 @@
     <string name="chatbot">ChatBot</string>
     <string name="market">e-Market</string>
     <string name="setting">Settings</string>
-    <string name="eAI">energy-AI</string>
+    <string name="eAI">Energy-AI</string>
 
     <string name="close_activity">Exiting App</string>
     <string name="confirm_close">Are you sure you want to close this app?</string>
     <string name="ask_yes">Yes</string>
     <string name="ask_no">No</string>
 
+    <string name="more">More</string>
+    
+    <string name="exp1">Our ChatBot is specially trained to resolve all your problems you could face during the lodging of a complaint.</string>
+    <string name="exp2">The Energy module uses machine learning for the most accurate prediction of energy consumption which can be scaled up for various uses.</string>
+    <string name="exp3">The e-Market provides the user real time prices of fruits and vegetables and can even given prediction of prices.</string>
 
     <string name="action_settings">Settings</string>
+    <string name="select">Select</string>
 
     <string-array name="spinner_array">
         <item>Ajmer</item>

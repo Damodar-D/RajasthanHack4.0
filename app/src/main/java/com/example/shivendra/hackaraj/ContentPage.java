@@ -38,6 +38,10 @@ public class ContentPage extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FourthFragment fourthFragment = new FourthFragment();
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_page,fourthFragment).commit();
     }
 
     @Override
@@ -111,11 +115,6 @@ public class ContentPage extends AppCompatActivity
             ThirdFragment thirdFragment = new ThirdFragment();
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_page,thirdFragment).commit();
-        } else if (id == R.id.nav_share) {
-            setTitle("Share");
-            FourthFragment fourthFragment = new FourthFragment();
-            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.content_page,fourthFragment).commit();
         } else if (id == R.id.setting) {
             setTitle( getString(R.string.setting));
             FifthFragment fifthFragment = new FifthFragment();
