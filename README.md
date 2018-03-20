@@ -14,3 +14,6 @@ Install all the dependencies fot Python3 before running the Python3
 1. Pyrebase(python)
 2. Numpy(python)
 3. SKlearn(python)
+
+### Note :-
+Please run the hack.py before using the Enery Prediction in the android app. The python code establishes a server between the Android App and the machine learning model.
