@@ -18,7 +18,7 @@ Install all the dependencies fot Python3 before running the Python3
 ### Note :-
 Please run the hack.py before using the Enery Prediction in the android app. The python code establishes a server between the Android App and the machine learning model.
 
-![Login](../master/Screenshots/Screenshot_20180321-042347.jpg)
+![Login](https://github.com/subham9777/RajasthanHack4.0/blob/master/%20Screenshots/Screenshot_20180321-042347.jpg)
 
 ![Home](../master/Screenshots/Screenshot_20180321-042354.jpg)
 
