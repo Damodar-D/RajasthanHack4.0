@@ -5,6 +5,9 @@ Install all the dependencies fot Python3 before running the Python3.
 The app supports Hndi and English languages.
 ScreenShots Included.
 
+For more info watch the demo video: 
+https://drive.google.com/file/d/1i-BnNPBIwkIJHuBIazyKW9Vp7WlHrKTf/view?usp=sharing
+
 ### Instructions:- 
 
 1. Clone the repository.
@@ -18,6 +21,9 @@ ScreenShots Included.
 3. SKlearn(python)
 
 ### Note :-
+
+Please run the hack.py before using the Energy Prediction in the Android App. The python code establishes a server between the Android App and the machine learning model.
+
 Please run the hack.py before using the Enery Prediction in the android app. The python code establishes a server between the Android App and the machine learning model.
 
 ![Login](https://github.com/subham9777/RajasthanHack4.0/blob/master/%20Screenshots/Screenshot_20180321-042347.jpg)
